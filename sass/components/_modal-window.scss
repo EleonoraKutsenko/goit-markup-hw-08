@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  padding: 40px;
+  background-color: var(--white-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+}
+
+.modal__btn--close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  fill: var(--black-text-color);
+  transition: fill 250ms var(--timing-cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
